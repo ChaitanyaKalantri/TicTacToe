@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> 2 - Player Tic Tac Toe Game</title>
+		<link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="node_modules/skeleton-css/css/skeleton.css">
+        <style>
+            .button {
+                background-color: #4CAF50; /* Green */
+                border: none;
+                color: white;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                cursor: pointer;
+                border-radius: 12px;
+            }
+        </style>
+	</head>
+	<body background="bgimg.jpg">
+		<div class="container">
+			<div class="menu">
+				<h1 className="display-3 mb-6 text-center" >Tic Tac Toe</h1>
+				<h3 className="display-3 mb-6 text-center">Follow the steps:</h3>
+                <div class="container">
+				<ol>
+					<li>Player 1 Starts New Game</li>
+					<li>Player 2 Join the existing game with Game-Id</li>
+				</ol>
+                </div>
+				<h4>Start New Game</h4>
+				<input class="rcorners2" type="text" name="name" id="nameNew" placeholder="Enter your name" required>
+				<button class="button" id="new">New Game</button>
+				<br><br>
+				<h4>Join game</h4>
+				<input type="text" name="name" id="nameJoin" placeholder="Enter your name" required>
+				<input type="text" name="room" id="room" placeholder="Enter Game ID" required>
+				<button class="button" id="join">Join Game</button>
+				<button class="button1" id="joinOthers">Watch Game</button>
+			</div>
+			<div class="gameBoard" style="display: none;">
+				<h2 id="userHello"></h2>
+				<h3 id="turn"></h3>
+				<table class="center" border="black 4px">
+					<tr>
+						<td><button class="tile" id="button_00"></button></td>
+						<td class="vert"><button class="tile" id="button_01"></button></td>
+						<td><button class="tile" id="button_02"></button></td>
+					</tr>
+					<tr>
+						<td class="hori"><button class="tile" id="button_10"></button></td>
+						<td class="vert hori"><button class="tile" id="button_11"></button></td>
+						<td class="hori"><button class="tile" id="button_12"></button></td>
+					</tr>
+					<tr>
+						<td><button class="tile" id="button_20"></button></td>
+						<td class="vert"><button class="tile" id="button_21"></button></td>
+						<td><button class="tile" id="button_22"></button></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<script src="node_modules/jquery/dist/jquery.min.js"></script>
+		<script src="/socket.io/socket.io.js"></script>
+		<script src="main.js"></script>
+	</body>
+</html>

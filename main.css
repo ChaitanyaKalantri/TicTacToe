@@ -1,0 +1,103 @@
+#nameNew {
+	border-radius: 50px;
+	border: 4px solid #73AD21;
+	padding: 20px;
+	width: 200px;
+	height: 50px;
+	font-size: 16px;
+}
+
+#nameJoin{
+	border-radius: 50px;
+	border: 4px solid #73AD21;
+	padding: 20px;
+	width: 200px;
+	height: 50px;
+	font-size: 16px;
+}
+td {
+	width: 100px;
+	height: 100px;
+}
+table {
+	margin: 5px auto;
+}
+.vert {
+	border-left: 2px solid black;
+	border-right: 2px solid black;
+}
+.hori {
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
+}
+.background {
+	opacity: 0.1;
+}
+
+#room {
+	border-radius: 50px;
+	border: 4px solid #73AD21;
+	padding: 20px;
+	width: 200px;
+	height: 50px;
+	font-size: 16px;
+}
+
+.container1 {
+	width: 200px;
+	height: 50px;
+	font-size: 20px;
+}
+
+.button1 {
+	background-color: #555555; /* Green */
+	border: none;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+	border-radius: 12px;
+}
+
+li{
+	font-size: 15px;
+	font-weight: bold;
+}
+
+h1{
+	font-size: 45px;
+	font-weight: bold;
+	font-family: cursive;
+}
+
+h2{
+	font-size: 30px;
+	font-weight: bold;
+	font-family: "Times New Roman";
+}
+
+h3{
+	font-size: 25px;
+	font-weight: bold;
+	font-family: serif;
+	font-style: italic;
+}
+
+.tile{
+	width: 80px;
+	height: 80px;
+	font-size: 60px;
+	font-family: Helvetica;
+	border: 4px solid #73AD21;
+}
+
+.gameBoard{
+	display: none;
+}
+
+.center{
+	margin: 0 auto;
+}
